@@ -15,7 +15,8 @@
 }
 .menu{
     max-width: 100%;
-    border:1px solid black;
+    border:1px solid #ffff;
+    color:white;
     padding: 1em;
     margin-bottom: 0.5em;
 }

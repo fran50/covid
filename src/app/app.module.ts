@@ -7,15 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { FranciaModule } from './pages/francia/francia.module';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FranciaModule
+    FranciaModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

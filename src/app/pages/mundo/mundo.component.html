@@ -1,8 +1,10 @@
-<app-filtro></app-filtro>
-<p>mundo works!</p>
-
+<!--<app-filtro></app-filtro>-->
+<h2>En el Mundo</h2>
+<h4>Datos de hoy {{fecha}}</h4>
 <app-covidh [datos]="Total"></app-covidh>
+
 <div class="grafica">
+    
     <canvas baseChart
                 [datasets]="lineChartData"
                 [labels]="lineChartLabels"
@@ -12,5 +14,6 @@
                 [chartType]="lineChartType"
                 [plugins]="lineChartPlugins">
             </canvas>
+       
                
 </div>

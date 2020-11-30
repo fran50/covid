@@ -1,4 +1,8 @@
 <div class="filtro">
-    <input type="date" name="" id="" [value]="fecha">
+    <input type="date" name="" id="" [(ngModel)]="fecha2"  >
+    <!--{{fecha2}}-->
+    <input type="date" name="" id="" [(ngModel)]="fecha">
+<!--{{fecha}}-->{{wiwi}}
+    <div class="boton"(click)="mandarFecha(fecha2,fecha)">Buscar entre fechas</div>
   
 </div>
