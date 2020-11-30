@@ -1,18 +1,20 @@
 <div class="titulo">Datos de hoy</div>
 <div class="cajon">
     <div class="caja">
-        <img  class="loading" src="../../../assets/loading/Dual.gif" *ngIf="bandera==false">
-        <div class="datos"> {{datos.today_new_recovered | number}}</div>
-        <div>Recuperados</div>
+        <img  class="loading" src="../../../assets/loading/Dual.gif" *ngIf="bandera==false; else elseBlock"/>
+        <ng-template #elseBlock><div class="datos"> {{datos.today_new_recovered | number}}</div>
+        <div>Recuperados</div></ng-template>
     </div>
     <div class="caja">
-        <img  class="loading" src="../../../assets/loading/Dual.gif" *ngIf="bandera==false">
+        <img  class="loading" src="../../../assets/loading/Dual.gif" *ngIf="bandera==false; else elseBlock2"/>
+        <ng-template #elseBlock2>
         <div class="datos">{{datos.today_new_confirmed | number}}</div>
-        <div>Infectados</div>
+        <div>Infectados</div></ng-template>
     </div>
     <div class="caja">
-        <img  class="loading" src="../../../assets/loading/Dual.gif" *ngIf="bandera==false">
+        <img  class="loading" src="../../../assets/loading/Dual.gif" *ngIf="bandera==false; else elseBlock3"/>
+        <ng-template #elseBlock3>
         <div class="datos">{{datos.today_new_deaths | number}}</div>
-        <div>Muertos</div>
+        <div>Muertos</div></ng-template>
     </div>
 </div>
